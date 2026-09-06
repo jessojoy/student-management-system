@@ -11,20 +11,16 @@ function setupNavigation() {
         <a href="students.html">Students</a>
         <a href="reports.html">Reports</a>
         <button id="logoutButton">Logout</button>
+        <span class="system-status">System Online</span>
     `;
+        const logoutButton = document.getElementById("logoutButton");
 
-    document
-        .getElementById("logoutButton")
-        .addEventListener(
-            "click",
-            handleLogout
-        );
-}
-
-function handleLogout() {
-    localStorage.removeItem("loggedInUser");
-
-    window.location.href = "index.html";
+    if (logoutButton) {
+        logoutButton.addEventListener("click", () => {
+            localStorage.removeItem("loggedInUser");
+            window.location.href = "index.html";
+        });
+    }
 }
 
 document.addEventListener(
