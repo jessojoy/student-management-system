@@ -1,5 +1,6 @@
 function setupNavigation() {
-    const navigation = document.getElementById("mainNavigation");
+    const navigation =
+        document.getElementById("mainNavigation");
 
     if (!navigation) {
         return;
@@ -9,7 +10,24 @@ function setupNavigation() {
         <a href="dashboard.html">Dashboard</a>
         <a href="students.html">Students</a>
         <a href="reports.html">Reports</a>
+        <button id="logoutButton">Logout</button>
     `;
+
+    document
+        .getElementById("logoutButton")
+        .addEventListener(
+            "click",
+            handleLogout
+        );
 }
 
-document.addEventListener("DOMContentLoaded", setupNavigation);
+function handleLogout() {
+    localStorage.removeItem("loggedInUser");
+
+    window.location.href = "index.html";
+}
+
+document.addEventListener(
+    "DOMContentLoaded",
+    setupNavigation
+);
