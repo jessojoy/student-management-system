@@ -23,15 +23,16 @@ function displayStudents(studentList) {
 
 function loadReports() {
 
-    const totalStudents = students.length;
+    const enrolledStudents =
+        getEnrolledStudents();
 
     document.getElementById(
         "reportTotalStudents"
-    ).textContent = totalStudents;
+    ).textContent =
+        enrolledStudents.length;
 
-    displayStudents(students);
+    displayStudents(enrolledStudents);
 }
-
 
 document
     .getElementById("courseFilter")
