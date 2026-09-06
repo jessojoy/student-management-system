@@ -73,6 +73,7 @@ td {
     font-weight: bold;
 }
 
+
 .dashboard-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -87,4 +88,16 @@ td {
 .dashboard-cards h2 {
     font-size: 32px;
     margin: 10px 0;
+
+section h2 {
+    margin-top: 0;
+}
+
+select {
+    min-width: 200px;
+}
+
+table th {
+    font-weight: bold;
+
 }
