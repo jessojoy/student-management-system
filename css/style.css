@@ -72,3 +72,19 @@ td {
     color: lightgreen;
     font-weight: bold;
 }
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.dashboard-cards .card {
+    text-align: center;
+}
+
+.dashboard-cards h2 {
+    font-size: 32px;
+    margin: 10px 0;
+}

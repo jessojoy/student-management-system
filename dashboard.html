@@ -3,18 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+
+    <title>Student Dashboard</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <nav id="mainNavigation"></nav>
 
     <main>
+
         <h1>Student Dashboard</h1>
-        <p>Dashboard content will be added here.</p>
+
+        <div class="dashboard-cards">
+
+            <div class="card">
+                <h2 id="totalStudents">0</h2>
+                <p>Total Students</p>
+            </div>
+
+            <div class="card">
+                <h2 id="yearOneStudents">0</h2>
+                <p>Year 1 Students</p>
+            </div>
+
+            <div class="card">
+                <h2 id="yearTwoStudents">0</h2>
+                <p>Year 2 Students</p>
+            </div>
+
+            <div class="card">
+                <h2 id="yearThreeStudents">0</h2>
+                <p>Year 3 Students</p>
+            </div>
+
+        </div>
+
     </main>
 
     <script src="js/app.js"></script>
+    <script src="js/studentData.js"></script>
+    <script src="js/dashboard.js"></script>
+
 </body>
 </html>
