@@ -72,3 +72,14 @@ td {
     color: lightgreen;
     font-weight: bold;
 }
+section h2 {
+    margin-top: 0;
+}
+
+select {
+    min-width: 200px;
+}
+
+table th {
+    font-weight: bold;
+}
